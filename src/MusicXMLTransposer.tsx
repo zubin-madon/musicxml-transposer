@@ -88,6 +88,8 @@ const MusicXMLTransposer: React.FC = () => {
           
           </div>
           
+          <div style={{
+              marginTop: '10rem'}}>
           <p style={{
               marginTop: '10rem',
               bottom: '0',
@@ -100,6 +102,7 @@ const MusicXMLTransposer: React.FC = () => {
               © {currentYear} Zubin Madon<br/> 
               github.com/zubin-madon
             </p>
+            </div>
         </div>
       );
       
