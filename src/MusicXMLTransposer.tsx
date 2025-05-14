@@ -4,6 +4,7 @@ const MusicXMLTransposer: React.FC = () => {
     const [transposedXML, setTransposedXML] = useState<string | null>(null);
     const [originalFileName, setOriginalFileName] = useState<string>('');
     const [clefChange, setClefChange] = useState<{ from: string; to: string } | null>(null);
+    const currentYear = new Date().getFullYear();
 
     const handleFileChange = async (e: React.ChangeEvent<HTMLInputElement>) => {
         const file = e.target.files?.[0];
@@ -82,7 +83,23 @@ const MusicXMLTransposer: React.FC = () => {
             <p>
               Tip: In Guitar Pro, after importing the file, you can easily adjust the track's octave so that notes fit well on the new clef’s staff lines.
             </p>
+
+            
+          
           </div>
+          
+          <p style={{
+              marginTop: '10rem',
+              bottom: '0',
+              width: '100%',
+              textAlign: 'center',
+              color: 'white',
+              fontWeight: 'bold',
+              margin: '0'
+            }}>
+              © {currentYear} Zubin Madon<br/> 
+              github.com/zubin-madon
+            </p>
         </div>
       );
       
