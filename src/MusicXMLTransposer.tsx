@@ -92,7 +92,7 @@ const MusicXMLTransposer: React.FC = () => {
               marginTop: '10rem'}}>
           <p style={{
               marginTop: '10rem',
-              bottom: '0',
+              bottom: '2',
               width: '100%',
               textAlign: 'center',
               color: 'white',
