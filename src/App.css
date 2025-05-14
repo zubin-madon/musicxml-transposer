@@ -1,0 +1,109 @@
+/* App.css */
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  padding: 2rem;
+  background-color: #121212;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #f0f0f0;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  color: #ffffff;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #cccccc;
+}
+
+.upload-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  margin: 4rem 0;
+}
+
+input[type="file"] {
+  padding: 1rem;
+  font-size: 1.1rem;
+  border: 2px solid #555;
+  border-radius: 8px;
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+  cursor: pointer;
+  width: 300px;
+  text-align: center;
+}
+
+input[type="file"]::file-selector-button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  background-color: #3a3a3a;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+input[type="file"]::file-selector-button:hover {
+  background-color: #555;
+}
+
+button {
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(to right, #4b6cb7, #182848);
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background: linear-gradient(to right, #1e3c72, #2a5298);
+  transform: scale(1.05);
+}
+
+.instructions {
+  max-width: 700px;
+  margin-top: 2rem;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #dddddd;
+}
+
+.instructions h3 {
+  text-align: left;
+  margin-bottom: 0.8rem;
+  font-size: 1.4rem;
+  color: #f0f0f0;
+}
+
+.instructions ol {
+  margin-left: 1.2rem;
+  padding-left: 1rem;
+}
+
+.instructions p {
+  margin-top: 2rem;
+  font-style: italic;
+  color: #aaa;
+  text-align: center;
+}
